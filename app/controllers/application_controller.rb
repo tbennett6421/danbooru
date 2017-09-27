@@ -1,5 +1,7 @@
 class ApplicationController < ActionController::Base
-  protect_from_forgery
+  #protect_from_forgery
+  skip_before_filter :verify_authenticity_token
+
   helper :pagination
   before_filter :reset_current_user
   before_filter :set_current_user
