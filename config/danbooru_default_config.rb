@@ -444,8 +444,8 @@ module Danbooru
           true
         elsif IPAddr.new("169.254.0.0/16").include?(ip_addr)
           true
-        elsif IPAddr.new("10.0.0.0/8").include?(ip_addr)
-          true
+        #elsif IPAddr.new("10.0.0.0/8").include?(ip_addr)
+        #  true
         elsif IPAddr.new("172.16.0.0/12").include?(ip_addr)
           true
         elsif IPAddr.new("192.168.0.0/16").include?(ip_addr)
