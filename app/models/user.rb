@@ -625,6 +625,8 @@ class User < ApplicationRecord
         4
       elsif is_gold?
         2
+      elsif is_admin?
+        10000
       else
         1
       end
@@ -637,6 +639,8 @@ class User < ApplicationRecord
         60
       elsif is_gold?
         30
+      elsif is_admin?
+        10000
       else
         10
       end
